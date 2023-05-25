@@ -13,9 +13,11 @@
   <body>
     <p>Введіть дані викладача:</p>
     <form>
+      <fieldset>
+      <legend>Обов'язково до заповнення:</legend>
       <section class="name">
         <label for="fullName">Повне ім'я:</label>
-        <input type="text" placeholder="Введіть повне ім'я" name="fullName">
+        <input type="text" placeholder="Введіть повне ім'я" name="fullName" required>
       </section>
       <section class="sex">
         <label for="lname">Стать:</label>
@@ -27,35 +29,39 @@
       <section class="date">
         <label for="birthDate">Дата народження:</label>
         <input type="date" name="birthDate"
-        value="2023-05-15"/>
+        value="2023-05-15" required/>
       </section>
       <section class="email">
         <label for="email">Email:</label>
-        <input type="email" placeholder="Введіть email" name="email">
+        <input type="email" placeholder="example@ex.com" name="email" required>
       </section>
       <section class="phone">
         <label for="phoneNumber">Номер телефону:</label>
-        <input type="tel" placeholder="Введіть номер телефону" name="phoneNumber">
+        <input type="tel" placeholder="+380661234567" name="phoneNumber">
       </section>
+      </fieldset>
+      <fieldset>
+        <legend>Додаткова інформація:</legend>
       <section class="color">
         <label for="backgroundColor">Бажаний колір фону:</label>
         <input type="color" name="backgroundColor">
       </section>
       <section class="country">
         <label for="country">Країна:</label>
-        <input type="text" placeholder="Введіть країну" name="country">
+        <input type="text" placeholder="Введіть країну" name="country" required>
       </section>
       <section class="city">
         <label for="city">Місто:</label>
-        <input type="text" placeholder="Введіть місто" name="city">
+        <input type="text" placeholder="Введіть місто" name="city" required>
       </section>
       <section class="comment">
         <label for="comment">Коментар:</label>
 	    <textarea name="comment" placeholder="Місце для коментаря"></textarea>
       </section>
+    </fieldset>
       <section class="buttons">
-        <input type="submit" value="Додати">
-        <input type="reset" value="Очистити">
+        <button type="submit">Надіслати</button>
+        <button type="reset">Очистити</button>
       </section>
     </form>
   </body>
