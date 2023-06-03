@@ -1,0 +1,356 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin: auto;
+  }
+.Cart-Container {
+  width: 100%;
+  height: 40%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 25px 40px #1687d933;
+  margin: 10px;
+}
+.wrapper .Cart-Container{
+  min-width: 500px;
+  }
+.Cart-Container:nth-child(odd) {
+  width: 50%;
+}
+.Cart-Container:nth-child(even) {
+  width: 35%;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.searchvj {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTermvj {
+  width: 100%;
+  font-size: 18px;
+  border: 1.5px solid #c8c8c8;
+  border-right: none;
+  padding: 10px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #c8c8c8;
+}
+
+.searchTermvj:focus {
+  color: #000000;
+}
+
+.searchButtonvj {
+  border: 0;
+  background: #0087cc;
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0 5px 0 #006599;
+  color: #fff;
+  cursor: pointer;
+  margin: 0;
+  outline: 0;
+  padding: 12px 20px;
+}
+
+.searchButtonvj:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+}
+
+.searchingBar {
+  position: relative;
+  top: 2%;
+  width: 97%;
+  margin: 0 auto;
+  display: block;
+}
+.tomato,
+.biscuit,
+.inputGood{
+  position: relative;
+  top: 4%;
+  border-top: 1px solid #d6d6d6;
+  height: 28%;
+  color: #9b9b9b;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+hr {
+  border: none;
+  border-top: 1px solid #d6d6d6;
+  height: 10px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tomatoText,
+.biscuitText {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+  left: 2%;
+}
+
+.tomatoText {
+  text-decoration: line-through;
+}
+
+.badge-container {
+  position: fixed;
+  bottom: 0;
+  left: 15px;
+  margin: 0 10px 10px 0;
+}
+
+@media print {
+  .badge-container {
+    background-color: white;
+  }
+  .badge {
+    border-width: 2px !important;
+    border-style: solid !important;
+    border-color: #6c00ab !important;
+    height: 50px !important;
+  }
+  .badge-text{
+    display: none;
+  }
+  .badge-author {
+    display: block !important;
+    color: #000000 !important;
+  }
+}
+
+.badge {
+  transform: translateY(-30px);
+  height: 25px;
+  width: 75px;
+  text-align: center;
+  padding-top: 3px;
+  border: 3px;
+  border-color: #6c00ab;
+  background-color: #6c00ab;
+  color: #ffffff;
+  border-radius: 10px 10px 0 0;
+  transition: background-color 1s linear, height 3s, transform 3s;
+}
+
+.badge:hover {
+  height: 70px;
+  transform: translateY(-75px);
+  background-color: #2285d0;
+}
+
+.badge-text {
+  font-family: Arial, sans-serif;
+}
+
+.badge:hover .badge-author {
+  display: block;
+}
+
+.badge-author {
+  display: none;
+  padding-top: 5px;
+  padding-left: 4px;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: left;
+}
+
+
+.counter {
+  width: 115px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.counter input {
+  width: 40px;
+  border: 0;
+  line-height: 40px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #e8e8e8;
+  color: #000000;
+  appearance: none;
+  border-radius: 5px;
+  outline: 0;
+}
+
+.counter span {
+  display: block;
+  font-size: 25px;
+  cursor: pointer;
+  color: #ffffff;
+  user-select: none;
+}
+
+.dot {
+  width: 25px;
+  border: 0;
+  line-height: 25px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #e8e8e8;
+  color: #000000;
+  appearance: none;
+  border-radius: 50%;
+  outline: 0;
+}
+
+.up {
+  background-color: green;
+  box-shadow: 0 2.5px 0 rgb(0, 87, 0);
+}
+
+.down {
+  background-color: red;
+  box-shadow: 0 2.5px 0 rgb(174, 0, 0);
+}
+
+.tomato .up {
+  visibility: hidden;
+}
+
+.tomato .down {
+  visibility: hidden;
+}
+
+.down:hover {
+  background-color: rgb(255, 106, 106);
+}
+
+.up:hover {
+  background-color: rgb(0, 255, 0);
+}
+
+.wasBought {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.wasBoughtText {
+  width: 120px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #fbfbfb;
+  color: #707070;
+  border-radius: 5px;
+  box-shadow: 0 2.5px 0 rgb(173, 173, 173);
+  border: 0.4px solid rgb(228, 228, 228);
+  margin-right: 0px;
+}
+.cross {
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #ff0000;
+  color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2.5px 0 rgb(174, 0, 0);
+  border: 0.4px solid rgb(255, 39, 39);
+  margin-left: 5px;
+}
+.cross:hover {
+  background-color: rgb(255, 106, 106);
+}
+.tomato .cross {
+  display: none;
+}
+.left, .bought {
+  font-size:25px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  left: 2%;
+}
+.product-item {
+	background-color: #e8e8e8;
+	height: 25px;
+	padding: 10px;
+	border-radius: 5px;
+	color: #707070;
+	font-weight: bold;
+  margin-left: 5px;
+}
+.amount {
+	background-color: #f2711d;
+	border-radius: 10px;
+  display: inline-block;
+	color: white;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 20px;
+	width: 20px;
+	margin-left: 5px;
+}
+.boughtSec .amount, 
+.boughtSec .product-item{
+  text-decoration: line-through;
+}
+.left{
+  top: 3%;
+}
+#button {
+  position: relative;
+  cursor: pointer;
+}
+#button:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #6c00ab;
+  color: #fff;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  font-size: 14px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) scale(1);
+}

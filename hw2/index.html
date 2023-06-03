@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="uk">
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Page</title>
+
+
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+	<section class="wrapper">
+		<section class="Cart-Container">
+			<div class="searchingBar">
+				<form method="get" action="/">
+				 <div class="searchvj" >
+					<input type="text" class="searchTermvj" placeholder="Назва товару" value name="s">
+					<button type="submit" class="searchButtonvj" id="button" data-tooltip="Додати товар">Додати</button>
+				 </div>
+			  </div>
+			  <section class="tomato">
+				<section class="tomatoText" contenteditable="true">Помідори</section>
+				<div class="counter">
+					<button class="dot down" id="button" data-tooltip="Зменшити кількість">-</button>
+					<input type="text" value="2">
+					<button class="dot up" id="button" data-tooltip="Збільшити кількість">+</button>
+				</div>
+				<div class="wasBought">
+					<span class="wasBoughtText">Не куплено</span>
+					<button class="cross" id="button" data-tooltip="Видалити">✖</button>
+				</div>
+			  </section>
+			  <section class="biscuit">
+				<section class="biscuitText" contenteditable="true">Печиво</section>
+				<div class="counter">
+					<button class="dot down" id="button" data-tooltip="Зменшити кількість">-</button>
+					<input type="text" value="2">
+					<button class="dot up" id="button" data-tooltip="Збільшити кількість">+</button>
+				</div>
+				<div class="wasBought">
+					<span class="wasBoughtText">Куплено</span>
+					<button class="cross" id="button" data-tooltip="Видалити">✖</button>
+				</div>
+			  </section>
+			  <section class="inputGood">
+				<section class="biscuitText" contenteditable="true">Сир</section>
+				<div class="counter">
+					<button class="dot down" id="button" data-tooltip="Зменшити кількість">-</button>
+					<input type="text" value="1">
+					<button class="dot up" id="button" data-tooltip="Збільшити кількість">+</button>
+				</div>
+				<div class="wasBought">
+					<span class="wasBoughtText">Куплено</span>
+					<button class="cross" id="button" data-tooltip="Видалити">✖</button>
+				</div>
+			  </section>
+			  </div>
+		</section>
+		<section class="Cart-Container">
+			<span class="left">Залишилося</span><hr>
+			<section class="leftSec">
+				<span class="product-item">
+					Печиво
+					<span class="amount">2</span>
+				</span>
+				<span class="product-item">
+					Сир
+					<span class="amount">1</span>
+				</span>
+			</section><hr>
+			<span class="bought">Куплено</span><hr>
+			<section class="boughtSec">
+				<span class="product-item">
+					Помідори
+					<span class="amount">2</span>
+				</span>
+			</section>
+		</section>
+	</section>
+	<div class="badge-container">
+			<div class="badge">
+			  <span class="badge-text">BuyList</span>
+			  <span class="badge-author"><strong>Авторка:</strong><br>Рудас Владислава</span>
+			</div>
+		  </div>
+</body>
+</html>
