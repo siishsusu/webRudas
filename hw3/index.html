@@ -14,9 +14,11 @@
 	<div class="wrapper">
 		<div class="Cart-Container">
 			<div class="menu">
-				<div class="search">
-					<input type="text" placeholder="Назва товару" id="searchingBar">
-					<button data-tooltip="toolTip" class="add">додати</button>
+				<div class="rowFirst">
+					<div class="search">
+						<input type="text" placeholder="Назва товару" id="searchingBar">
+						<button data-tooltip="Додати товар" class="add">додати</button>
+					</div>
 				</div>
 				<div id="contForRow">
 				</div>
@@ -27,7 +29,7 @@
 				<div class="BoughtRow">
 					<h3>Залишилось</h3>
 				</div>
-				<div id="remainders">
+				<div id="leftovers">
 				</div>
 
 				<div class="BoughtRow">
@@ -38,12 +40,12 @@
 
 		</div>
 	</div>
-	<div class="badge-container">
-		<div class="badge">
-			<span class="badge-text">BuyList</span>
-			<span class="badge-author"><strong>Авторка:</strong><br>Рудас Владислава</span>
-		</div>
+	<div class="badge">
+		<span class="badge-text">BuyList</span>
+		<span class="badge-author"><strong>Авторка:</strong><br>Рудас Владислава</span>
 	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="main.js"></script>
 </body>
 
 </html>
