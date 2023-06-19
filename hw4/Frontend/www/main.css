@@ -1,0 +1,590 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 630px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.col-sm-6 {
+  position: relative;
+  flex-basis: 33.33%;
+  max-width: 33.33%;
+}
+
+.pizza-card {
+  display: flex;
+  flex-direction: column;
+  height: 95%;
+}
+
+.btn {
+  background-color: #f0a52a;
+  color: white;
+  border: 1px solid #ec861c;
+  font-weight: bolder;
+  height: 30px;
+  border-radius: 8px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  width: calc(100% - 30px);
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.type {
+  margin-top: -6px;
+  font-size: 15px;
+  color: #b6b4b4;
+}
+
+.name {
+  font-weight: bold;
+  color: #ee6a00;
+}
+
+.info {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.info.new {
+  background-color: #db524b;
+}
+
+.info.popular {
+  background-color: #59b958;
+}
+
+.all {
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order {
+  color: black;
+  font-size: 25px;
+  margin-top: 7%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.order .orangeCircleWithNumber {
+  height: 20px;
+  width: 20px;
+  margin-bottom: 4%;
+}
+
+.orangeCircleWithNumber {
+  background-color: #f2711d;
+  border-radius: 10px;
+  display: inline-flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 15px;
+  width: 15px;
+  margin-left: 5px;
+  font-size: 12px;
+  margin-bottom: 2px;
+  font-weight: bold;
+}
+
+.thumbnail {
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+.caption {
+  align-self: auto;
+}
+
+.category {
+  color: #f2711d;
+  margin: 0 10px;
+}
+
+.category.picked {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #f2711d;
+  color: white;
+}
+
+.categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pizzaKMA {
+  height: 70px;
+  background-color: rgba(51, 51, 49, 0.9);
+  display: flex;
+  justify-content: left;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+}
+
+.flag {
+  width: 70px;
+  height: 69px;
+  box-sizing: content-box;
+  padding-top: 0px;
+  padding-bottom: 15px;
+  position: relative;
+  background: #ec861c;
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.flagBordersName {
+  transform: rotate(180deg);
+  width: 100%;
+  height: 25px;
+  margin-bottom: -165px;
+  margin-left: -0.4px;
+}
+
+.discount {
+  height: 70px;
+  display: flex;
+  justify-content: left;
+  position: fixed;
+  bottom: 40px;
+  left: 10px;
+  width: 100%;
+}
+
+.discountFlag {
+  width: 70px;
+  height: 150px;
+  box-sizing: content-box;
+  padding-top: -15px;
+  position: relative;
+  background: #ec861c;
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: 10px;
+  margin-top: -10px;
+}
+
+.flagBorders {
+  width: 71px;
+  height: 25px;
+  margin-top: -30px;
+  margin-left: -0.3px;
+}
+
+.parting {
+  content: "";
+  width: 86%;
+  border: 0.1px dotted #dc6f02;
+  margin-left: 5px;
+  border-width: 2px;
+}
+
+.flagDiscountText {
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.contactInfo {
+  color: #9f9f9f;
+  display: flex;
+  justify-content: left;
+  margin-top: 10px;
+  order: -1;
+  margin-bottom: -7px;
+}
+
+.contact {
+  margin-right: 50px;
+  font-size: 15px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 90%;
+}
+
+.pizza {
+  font-size: 15px;
+  color: white;
+  margin-top: 3px;
+}
+
+.text:before {
+  content: "";
+  border: 0.2px solid #9f9f9f;
+  align-self: stretch;
+}
+
+
+.contact.number {
+  font-size: 18px;
+  margin-top: -3px;
+}
+
+.contact.works {
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.btn.contact {
+  font-weight: normal;
+  position: absolute;
+  right: -2.3%;
+  top: 4%
+}
+
+.container {
+  flex: 1;
+  width: 72%;
+  border-right: 1px solid #ddd;
+  padding-right: 0;
+  padding-left: 10px;
+}
+
+.buySmall,
+.buyBig {
+  align-items: center;
+  text-align: center;
+  margin-right: 15px;
+
+}
+
+.characteristics {
+  margin-top: -10px;
+}
+
+.price {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: -10px;
+}
+
+.currency {
+  font-size: 15px;
+  margin-top: -22px;
+}
+
+.bought {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  position: relative;
+  padding-left: 15px;
+  height: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.cart {
+  display: flex;
+  align-items: flex-start;
+}
+
+.clear {
+  font-size: 10px;
+  color: #9f9f9f;
+  position: absolute;
+  right: 20px;
+}
+
+.name.ordered {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.characteristicsOrdered {
+  margin-top: 15px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 80px;
+}
+
+.priceOrdered,
+.quantity {
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+.minus {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  background-color: #cc3a33;
+  color: white;
+  display: flex;
+}
+
+.plus {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  background-color: #4ca94a;
+  color: white;
+  display: flex;
+}
+
+.delete {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  background-color: #d1d1d1;
+  color: #ec861c;
+  border: 1px solid #d1d1d1;
+  display: flex;
+}
+
+.priceAndQuantityOrdered {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  width: 170px;
+}
+
+.boughtQuantity {
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+}
+
+.orderedCart {
+  margin-top: 25px;
+  position: relative;
+}
+
+.orderedCart::before {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: -15px;
+  width: calc(100% + 10px);
+  height: 1px;
+  background-color: #c3bd81;
+}
+
+.pizzaOrdered::after {
+  content: '';
+  display: block;
+  width: 335px;
+  left: -55px;
+}
+
+.pizzaOrderedPhoto {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: -10px;
+  right: 0;
+  margin-right: -50px;
+}
+
+.btn.makeOrder {
+  width: 300px;
+}
+
+.buttonOrder {
+  display: flex;
+  justify-content: center;
+}
+
+.orderPizza {
+  position: fixed;
+  bottom: 20px;
+}
+
+.orderedPrice {
+  display: flex;
+  justify-content: space-between;
+  width: 20vw;
+  font-weight: bold;
+  align-items: center;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  color: gray;
+  font-size: 12px;
+}
+
+.price.ordered {
+  position: absolute;
+  right: 0;
+}
+
+@media (min-width: 1535px) {
+
+  /* Стилі, що застосовуються на ДУЖЕ ВЕЛИКИХ екранах */
+  .text:before {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1080px) and (max-width: 1535px) {
+
+  /* Стилі, що застосовуються на ВЕЛИКИХ екранах */
+  .row {
+    width: 100%;
+  }
+
+  .priceAndQuantityOrdered {
+    margin: 0 10px;
+  }
+
+  .text {
+    width: 85%;
+  }
+}
+
+@media (min-width: 839px) and (max-width: 1079px) {
+
+  /* Стилі, що застосовуються на СЕРЕДНІХ екранах */
+  .contact.free {
+    display: none;
+  }
+
+  .row {
+    width: 95%;
+  }
+
+  .col-sm-6 {
+    position: relative;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .text {
+    width: 80%;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 840px) {
+
+  /* Стилі, що застосовуються на МАЛИХ екранах */
+  .col-sm-6 {
+    position: relative;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .row {
+    width: 95%;
+  }
+
+  .contact.free,
+  .contact.works {
+    display: none;
+  }
+
+  .text {
+    width: 72%;
+  }
+
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .category {
+    width: 28%;
+  }
+}
+
+@media (max-width: 720px) {
+
+  /* Стилі, що застосовуються на ДУЖЕ МАЛИХ екранах */
+  .col-sm-6 {
+    position: relative;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .row {
+    width: 95%;
+  }
+
+  .contact.free,
+  .contact.works {
+    display: none;
+  }
+
+  .text {
+    width: 200px;
+  }
+
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .pizza {
+    display: none;
+  }
+
+  .btn.contact {
+    font-weight: normal;
+    position: absolute;
+    right: -15%;
+    top: 56%
+  }
+
+  .category {
+    width: 50%;
+  }
+}
